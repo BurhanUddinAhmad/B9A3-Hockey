@@ -37,7 +37,7 @@
 </head>
 <body class="font-manrope">
     <!-- Header section  -->
-    <header class="max-w-6xl mx-auto">
+    <header class="container lg:px-24 mx-auto">
       <!-- Navbar  -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -53,22 +53,47 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <h2>Hockey<span>'</span>s</h2>
+          <h2 class="text-3xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240]">'</span>s</h2>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a class="hover:text-[#FF4240]">About</a></li>
+            <li><a class="hover:text-[#FF4240]">Pages</a></li>
+            <li><a class="hover:text-[#FF4240]">Blog</a></li>
+            <li><a class="hover:text-[#FF4240]">Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end">
+          <a href="#"><i class="fa-solid fa-magnifying-glass hidden lg:block mr-4"></i></a>
           <button class="btn bg-[#FF4240] text-white">Get Ticket</button>
         </div>
       </div>
 
+      <!-- Start Hero slider  -->
+      <div class="carousel w-full">
+        <!-- Slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full bg-[url('./images/1.png')] h-[70vh] bg-cover bg-center rounded-md">
+          <div class="absolute flex gap-3 left-5 bottom-5">
+            <a href="#slide3" class="btn btn-circle bg-black border-none text-white hover:bg-slate-800">❮</a> 
+            <a href="#slide2" class="btn btn-circle  bg-black border-none text-white hover:bg-slate-800">❯</a>
+          </div>
+        </div> 
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full bg-[url('./images/2.png')] h-[70vh] bg-cover bg-center rounded-md">
+          <div class="absolute flex gap-3 left-5 bottom-5">
+            <a href="#slide1" class="btn btn-circle  bg-black border-none text-white hover:bg-slate-800">❮</a> 
+            <a href="#slide3" class="btn btn-circle  bg-black border-none text-white hover:bg-slate-800">❯</a>
+          </div>
+        </div> 
+        <!-- Slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full bg-[url('./images/3.png')] h-[70vh] bg-cover bg-center rounded-md">
+          <div class="absolute flex gap-3 left-5 bottom-5">
+            <a href="#slide2" class="btn btn-circle  bg-black border-none text-white hover:bg-slate-800">❮</a> 
+            <a href="#slide1" class="btn btn-circle  bg-black border-none text-white hover:bg-slate-800">❯</a>
+          </div>
+        </div> 
+      </div> <!-- End hero slider  -->
     </header>
     
     <!-- Main section  -->
